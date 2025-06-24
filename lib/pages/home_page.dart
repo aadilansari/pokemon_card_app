@@ -65,26 +65,33 @@ class HomePage extends StatelessWidget {
                     children: [
                       Hero(
                         tag: card.id,
-                        child: ClipRect(
-                          child: Align(
-                            alignment: Alignment.topCenter,
-                            heightFactor: 0.70,
-                            child: CachedNetworkImage(
-                              imageUrl: card.imageUrl,
-                              fit: BoxFit.cover,
-                              placeholder: (c, _) =>
-                  const Center(child: CircularProgressIndicator()),
-                              errorWidget: (c, _, __) => const Icon(Icons.error),
+                        child: Transform.translate(
+                          
+                          offset: Offset(0.0, 25.0),
+                          child: ClipRect(
+                            child: Align(
+                              alignment: Alignment.topCenter,
+                              heightFactor: 0.56,
+                              child: CachedNetworkImage(
+                                imageUrl: card.imageUrl,
+                                fit: BoxFit.cover,
+                                placeholder: (c, _) =>
+                                            const Center(child: CircularProgressIndicator()),
+                                errorWidget: (c, _, __) => const Icon(Icons.error),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8),
-                        child: Text(
-                          card.name,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(fontWeight: FontWeight.bold),
+                      Transform.translate(
+                          offset: Offset(0.0, 30.0),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8),
+                          child: Text(
+                            card.name,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ),
                     ],
