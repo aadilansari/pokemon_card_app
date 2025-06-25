@@ -132,5 +132,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ### Author
 
 **Aadil Ansari** – [aadil.ansari8@gmail.com](mailto:aadil.ansari8@gmail.com)
-
-> *Happy coding & Catch ‘em all!*
