@@ -127,6 +127,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### Author
 
-**Aadil Ansari** – [aadil.example@email.com](mailto:aadil@example@email.com)
+**Aadil Ansari** – [aadil.ansari8@gmail.com](mailto:aadil.ansari8@gmail.com)
 
 > *Happy coding & Catch ‘em all!*
